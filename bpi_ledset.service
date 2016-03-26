@@ -1,0 +1,9 @@
+[Unit]
+Description=Disable all the LEDs on Banana Pi M1
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/bpi_ledset eth0 b y g
+
+[Install]
+WantedBy=multi-user.target
