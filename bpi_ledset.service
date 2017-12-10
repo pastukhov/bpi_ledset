@@ -1,5 +1,7 @@
 [Unit]
 Description=Disable all the LEDs on Banana Pi M1
+Wants=network-online.target
+After=network-online.target
 
 [Service]
 Type=oneshot
